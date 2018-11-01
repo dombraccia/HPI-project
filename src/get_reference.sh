@@ -12,7 +12,7 @@ wget http://plasmodb.org/common/downloads/release-40/Pfalciparum/fasta/PlasmoDB-
 # indexing all reference transcriptomes using Salmon
 salmon index -t ../reference_data/GRCh38.p12_cDNA/Homo_sapiens.GRCh38.cdna.all.fa.gz -i ../reference_data/GRCh38.p12_cDNA_index 
 
-salmon index -t ../reference_data/GRCh38.p12_ncRNA/Homo_sapiens.GRCh38.ncrna.all.fa.gz -i ../reference_data/GRCh38.p12_ncrna_index
+salmon index -t ../reference_data/GRCh38.p12_ncRNA/Homo_sapiens.GRCh38.ncrna.fa.gz -i ../reference_data/GRCh38.p12_ncrna_index
 
 salmon index -t ../reference_data/pfc_ref_transcriptome_PlDB40/PlasmoDB-40_Pfalciparum_ESTs.fasta -i ../reference_data/pfc_ref_transcriptome_PlDB40_index
 
