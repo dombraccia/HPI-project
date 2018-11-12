@@ -14,10 +14,7 @@ wget ftp://ftp.ensemblgenomes.org/pub/protists/release-41/fasta/plasmodium_falci
 gzip -d ../reference_data/*.gz
 
 # concatenating all reference transcriptome .fa files to one multi-fa file for indexing by salmon
-cat ../reference_data/Homo_sapiens.GRCh38.cdna.all.fa \ 
-    ../reference_data/Plasmodium_falciparum.EPr1.cdna.all.fa \ 
-    ../reference_data/Homo_sapiens.GRCh38.ncrna.fa \
-    ../reference_data/Plasmodium_falciparum.EPr1.ncrna.fa > ../reference_data/GRCh38.p12_and_EPr1.fa
+cat ../reference_data/Homo_sapiens.GRCh38.cdna.all.fa ../reference_data/Plasmodium_falciparum.EPr1.cdna.all.fa ../reference_data/Homo_sapiens.GRCh38.ncrna.fa ../reference_data/Plasmodium_falciparum.EPr1.ncrna.fa > ../reference_data/GRCh38.p12_and_EPr1.fa
 
 # indexing all reference transcriptomes using Salmon
 salmon index -t ../reference_data/GRCh38.p12_and_EPr1.fa -i ../reference_data/GRCh38.p12_and_EPr1_index
